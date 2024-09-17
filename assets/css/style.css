@@ -573,7 +573,7 @@ body.active { overflow: hidden; }
 }
 
 .copyright {
-  font-size: var(--fs-8);
+  font-size: 1.6rem;
   margin-block-start: 25px;
 }
 
