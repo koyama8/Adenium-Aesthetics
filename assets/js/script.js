@@ -69,3 +69,28 @@ const typed = new Typed('.multiple-text', {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('newsletter-form');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    const emailField = form.querySelector('input[name="email_address"]');
+    const email = emailField.value;
+
+    // Valida o e-mail
+    if (email && validateEmail(email)) {
+      alert('E-mail cadastrado com sucesso!');
+      form.reset(); 
+    } else {
+      alert('Por favor, digite um e-mail válido.');
+    }
+  });
+
+  function validateEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  }
+});
+
+
