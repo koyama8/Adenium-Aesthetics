@@ -235,16 +235,7 @@ body.active { overflow: hidden; }
   margin-block-end: 15px;
 }
 
-.avatar-list {
-  display: flex;
-  flex-direction: row-reverse;
-}
 
-.avatar-list.absolute {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-}
 
 .avatar-item:not(:first-child) { margin-inline-end: -15px; }
 
@@ -257,10 +248,6 @@ body.active { overflow: hidden; }
   will-change: transform;
 }
 
-.avatar-list.absolute .avatar:is(:hover, :focus) {
-  transform: scale(0.9);
-  border-color: var(--white);
-}
 
 .card-meta-list {
   display: flex;
