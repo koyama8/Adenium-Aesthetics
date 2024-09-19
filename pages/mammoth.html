@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adenium Aesthetics</title>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+   
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+
+    <style>
+        /* Body and General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            color: #2e8b57;
+            text-align: center;
+        }
+
+        h3{
+            font-size: 15px;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        section {
+            background: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }      
+
+        /* Blog Content Styles */
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+        }
+
+        .blog-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .blog-content {
+            text-align: left;
+        }
+
+        .blog-content h2 {
+            color: #2e8b57;
+            font-size: 1.5rem;
+        }
+
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .navbar {
+                display: none;
+            }
+
+            .navbar.active {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .swiper-container {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+ 
+
+    <!-- 
+    - #HEADER
+  -->
+
+  <header class="header section" data-header>
+    <div class="container">
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="../index.html" class="navbar-link hover:underline"
+              data-nav-link>Principal</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#recent-post" class="navbar-link hover:underline"
+              data-nav-link>Postagem recente</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#recommended" class="navbar-link hover:underline"
+              data-nav-link>Recomendado</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="wrapper">
+
+        <button class="search-btn" aria-label="search" data-search-toggler>
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">Pesquisar</span>
+        </button>
+
+        <button class="nav-toggle-btn" aria-label="toggle menu"
+          data-nav-toggler>
+          <span class="span one"></span>
+          <span class="span two"></span>
+          <span class="span three"></span>
+        </button>
+
+        <a href="#" class="btn" id="subscribeBtn">Inscreva-se</a>
+
+      </div>
+
+    </div>
+  </header>
+
+
+    <!-- Swiper Slider -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../assets/images/Mammoth_1.png" alt="Adenium 1"></div>
+            <div class="swiper-slide"><img src="../assets/images/bonsai.jpg" alt="Adenium 2"></div>
+            
+        </div>
+        <!-- Pagination and navigation buttons -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Blog Content -->
+    <div class="container">
+        <section class="blog-header">
+            <h1>Welcome to Adenium Aesthetics</h1>
+            <p>O Adenium Mammoth é uma das variedades mais impressionantes de Adenium, conhecido pelo tamanho colossal 
+               de seu caudex e sua presença imponente. Sua aparência escultural e flores vibrantes fazem dele uma 
+               peça central em qualquer coleção. Na Adenium Aesthetics, oferecemos guias detalhados para cuidar do 
+               Mammoth, ajudando-o a prosperar e encantar com sua beleza única.</p>
+        </section>
+    
+        <section class="blog-content">
+            <h2>Sobre o Adenium Mammoth</h2>
+            <p>O <strong>Adenium Mammoth</strong> é uma variedade de destaque do gênero <em>Adenium</em>, também 
+               conhecido como "Rosa do Deserto". Nativo de regiões áridas, ele se destaca por seu caudex extremamente 
+               grande, que armazena água e dá à planta uma resistência incrível a condições de seca prolongada.</p>
+    
+            <h2>Características</h2>
+            <p><strong>Caudex:</strong> O caudex do Adenium Mammoth é maciço, proporcionando uma aparência robusta e 
+               escultural. Esse caudex atua como um reservatório de água, permitindo que a planta sobreviva em ambientes 
+               áridos por longos períodos.</p>
+            <p><strong>Folhas:</strong> Suas folhas são espessas e verdes, ajudando na retenção de umidade. Durante o 
+               inverno ou períodos de dormência, é comum que as folhas caiam, o que é uma resposta natural à economia 
+               de energia.</p>
+            <p><strong>Flores:</strong> As flores do Mammoth aparecem em tons de rosa e vermelho, criando um contraste 
+               impressionante com o grande caudex. Elas florescem principalmente durante a primavera e o verão.</p>
+    
+            <h2>Cuidados Especiais</h2>
+            <h3>1. Iluminação</h3>
+            <p>O Adenium Mammoth prospera sob <strong>luz solar direta</strong>, necessitando de no mínimo 6 horas por 
+               dia. Garantir uma boa exposição solar é crucial para que a planta cresça de forma saudável e produza 
+               flores vibrantes e abundantes.</p>
+    
+            <h3>2. Irrigação</h3>
+            <p>A irrigação do Mammoth deve ser controlada. Como ele armazena água em seu caudex, é preferível deixar o 
+               solo secar completamente entre as regas. Evite o excesso de água para prevenir o apodrecimento das raízes.</p>
+    
+            <h3>3. Solo</h3>
+            <p>O solo ideal para o Adenium Mammoth deve ser bem drenado, com uma mistura de terra para cactos e suculentas. 
+               Adicionar perlita e areia grossa ajuda a garantir que a água não fique retida, simulando seu ambiente natural.</p>
+    
+            <h3>4. Floração</h3>
+            <p>As flores do Adenium Mammoth desabrocham nas estações quentes, com fertilização adequada. Um fertilizante 
+               balanceado pode ser usado para estimular a floração, sempre respeitando as necessidades de luz e água da planta.</p>
+    
+            <h3>5. Poda</h3>
+            <p>A poda é recomendada no final do inverno, removendo galhos mortos e enfraquecidos. Isso ajudará a planta 
+               a manter sua forma e promoverá o crescimento de novos brotos, incentivando uma floração mais intensa.</p>
+    
+            <h2>Outros Cuidados</h2>
+            <p>Embora o Adenium Mammoth seja uma planta resistente, ela ainda pode ser afetada por pragas como pulgões e 
+               cochonilhas. Monitore a planta regularmente e, se necessário, utilize tratamentos apropriados para evitar 
+               danos. Com cuidados adequados, o Mammoth se tornará uma peça majestosa em qualquer coleção.</p>
+        </section>
+    </div>
+   
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+    <footer class="footer">
+        <div class="container">
+
+          <!--
+        <div class="footer-top section">
+
+          <div class="footer-brand">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/logo.svg" width="129" height="40"
+                alt>
+            </a>
+
+            <p class="footer-text">
+              A minimal, functional theme for running a paid-membership
+              publication on Ghost.
+            </p>
+
+          </div>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="h5">Social</p>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="logo-facebook"></ion-icon>
+
+              <a href="#" class="footer-link hover:underline">Facebook</a>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="logo-twitter"></ion-icon>
+
+              <a href="#" class="footer-link hover:underline">Twitter</a>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="logo-pinterest"></ion-icon>
+
+              <a href="#" class="footer-link hover:underline">Pinterest</a>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="logo-vimeo"></ion-icon>
+
+              <a href="#" class="footer-link hover:underline">Vimeo</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="h5">About</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">Style Guide</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">Features</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">Contact</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">404</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">Privacy
+                Policy</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="h5">Features</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">Upcoming
+                Events</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">Blog & News</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">Features</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">FAQ Question</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">Testimonial</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="h5">Membership</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">Account</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">Membership</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">Subscribe</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">Tags</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">Authors</a>
+            </li>
+
+          </ul>
+
+        </div>
+      -->
+          <div class="section footer-bottom">
+
+            <p class="copyright">
+              &copy; Copyright 2024 by <a href="#"
+                class="copyright-link hover:underline">Koyama</a>
+            </p>
+
+          </div>
+
+        </div>
+      </footer>
+
+
+    <!-- Custom JS -->
+    <script>
+        // Swiper initialization
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+
+        // Toggle mobile menu
+        const menuBars = document.getElementById('menu-bars');
+        const navbar = document.querySelector('.navbar');
+        menuBars.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
