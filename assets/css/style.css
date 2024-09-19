@@ -142,7 +142,6 @@ body.active { overflow: hidden; }
 
 .section { margin-inline: 15px; }
 
-.hover\:underline { text-underline-offset: 3px; }
 
 .hover\:underline:is(:hover, :focus) { text-decoration: underline; }
 
