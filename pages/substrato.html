@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adenium Aesthetics</title>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+   
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+
+    <style>
+        /* Body and General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            color: #2e8b57;
+            text-align: center;
+        }
+
+        h3{
+            font-size: 15px;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        section {
+            background: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }      
+
+        /* Blog Content Styles */
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+        }
+
+        .blog-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .blog-content {
+            text-align: left;
+        }
+
+        .blog-content h2 {
+            color: #2e8b57;
+            font-size: 1.5rem;
+        }
+
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .navbar {
+                display: none;
+            }
+
+            .navbar.active {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .swiper-container {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+ 
+
+    <!-- 
+    - #HEADER
+  -->
+
+  <header class="header section" data-header>
+    <div class="container">
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="../index.html" class="navbar-link hover:underline"
+              data-nav-link>Principal</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#recent-post" class="navbar-link hover:underline"
+              data-nav-link>Postagem recente</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#recommended" class="navbar-link hover:underline"
+              data-nav-link>Recomendado</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="wrapper">
+
+        <button class="search-btn" aria-label="search" data-search-toggler>
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">Pesquisar</span>
+        </button>
+
+        <button class="nav-toggle-btn" aria-label="toggle menu"
+          data-nav-toggler>
+          <span class="span one"></span>
+          <span class="span two"></span>
+          <span class="span three"></span>
+        </button>
+
+        <a href="#" class="btn" id="subscribeBtn">Inscreva-se</a>
+
+      </div>
+
+    </div>
+  </header>
+
+
+    <!-- Swiper Slider -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="imagens/anaconda.png" alt="Adenium 1"></div>
+            <div class="swiper-slide"><img src="imagens/anaconda_2.png" alt="Adenium 2"></div>
+            <div class="swiper-slide"><img src="imagens/anaconda_3.png" alt="Adenium 3"></div>
+            <div class="swiper-slide"><img src="imagens/anaconda_4.png" alt="Adenium 4"></div>
+        </div>
+        <!-- Pagination and navigation buttons -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    
+    <div class="container">
+        <section class="blog-header">
+            <h1>Guia Definitivo para Substrato Perfeito de Rosas do Deserto
+            </h1>
+        </section>
+    
+        <section class="blog-content">
+            <h2>Introdução</h2>
+            <p>Em nossa jornada de cultivo, descobrimos que o substrato não é apenas um componente, mas o elemento mais crucial para a prosperidade e desenvolvimento das Rosas do Deserto. Este guia desvenda os segredos de um substrato perfeito, essencial para o desenvolvimento saudável dessas plantas fascinantes.</p>
+    
+            <h2>O que é Substrato?</h2>
+            <p>O substrato é o suporte vital para as Rosas do Deserto, fornecendo o necessário para que se apoiem e desenvolvam. Especialmente em vasos, um substrato adequado é essencial para a absorção de nutrientes e água, sendo a base para o sucesso no cultivo dessas plantas. O substrato ideal deve oferecer uma combinação balanceada de drenagem, retenção de umidade e suporte para as raízes.</p>
+    
+            <h2>Características Básicas do Substrato Ideal</h2>
+            <p>Um substrato ideal para Rosas do Deserto deve ser leve e poroso, facilitando o desenvolvimento das raízes. As características básicas incluem:</p>
+            <ul>
+                <li><strong>Leveza:</strong> O substrato deve ser leve para evitar sobrecarregar o sistema radicular da planta.</li>
+                <li><strong>Porosidade:</strong> Deve ter uma estrutura porosa que permita a boa circulação de ar e a drenagem eficiente da água.</li>
+                <li><strong>Composição:</strong> A escolha dos componentes varia com a disponibilidade regional e as fases de vida da planta, desde a germinação até a fase adulta. Deve levar em conta o clima e o microambiente local.</li>
+            </ul>
+    
+            <h2>Composição do Substrato Premium para Rosas do Deserto</h2>
+            <p>O substrato premium para Rosas do Deserto é formulado com os seguintes componentes, que garantem a máxima eficiência e suporte para o crescimento das plantas:</p>
+            <ul>
+                <li><strong>Casca de Pinus Triturada e Decomposta:</strong> Proporciona boa aeração e estrutura ao substrato.</li>
+                <li><strong>Casca de Arroz Carbonizada:</strong> Ajuda na retenção de umidade e melhora a estrutura do substrato.</li>
+                <li><strong>Pó de Coco Lavado:</strong> Favorece a retenção de água e melhora a textura do substrato.</li>
+                <li><strong>Carvão Triturado:</strong> Oferece propriedades de drenagem e ajuda a controlar o pH.</li>
+                <li><strong>Calcário Dolomítico:</strong> Corrige a acidez do substrato e fornece cálcio e magnésio essenciais.</li>
+                <li><strong>Adubo Orgânico de Compostagem:</strong> Fornece nutrientes essenciais para o crescimento saudável das plantas.</li>
+                <li><strong>Arenito Moído:</strong> Melhora a drenagem e a aeração do substrato.</li>
+                <li><strong>Agroblen Agrocote 17-17-17 (3M):</strong> Fertilizante de liberação controlada que fornece uma quantidade equilibrada de nutrientes.</li>
+            </ul>
+    
+            <h2>Benefícios do Substrato</h2>
+            <p>O substrato premium para Rosas do Deserto oferece uma série de benefícios que garantem o sucesso no cultivo:</p>
+            <ul>
+                <li><strong>Pronto para Uso:</strong> O substrato está pronto para ser utilizado, sem necessidade de preparação adicional.</li>
+                <li><strong>Favorece o Abastecimento de Nutrientes e Água:</strong> Garantia de fornecimento contínuo de nutrientes e água para a planta.</li>
+                <li><strong>Conserva a Umidade Necessária:</strong> Mantém a umidade adequada para o desenvolvimento saudável das raízes.</li>
+                <li><strong>Desenvolve Todo o Sistema Radicular:</strong> Promove o crescimento eficiente das raízes e radicelas.</li>
+                <li><strong>Dá Sustentação à Planta:</strong> Oferece suporte adequado para a planta, garantindo estabilidade e crescimento saudável.</li>
+            </ul>
+        </section>
+    </div>
+   
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+    <footer class="footer">
+        <div class="container">
+
+          <!--
+        <div class="footer-top section">
+
+          <div class="footer-brand">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/logo.svg" width="129" height="40"
+                alt>
+            </a>
+
+            <p class="footer-text">
+              A minimal, functional theme for running a paid-membership
+              publication on Ghost.
+            </p>
+
+          </div>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="h5">Social</p>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="logo-facebook"></ion-icon>
+
+              <a href="#" class="footer-link hover:underline">Facebook</a>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="logo-twitter"></ion-icon>
+
+              <a href="#" class="footer-link hover:underline">Twitter</a>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="logo-pinterest"></ion-icon>
+
+              <a href="#" class="footer-link hover:underline">Pinterest</a>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="logo-vimeo"></ion-icon>
+
+              <a href="#" class="footer-link hover:underline">Vimeo</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="h5">About</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">Style Guide</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">Features</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">Contact</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">404</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">Privacy
+                Policy</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="h5">Features</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">Upcoming
+                Events</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">Blog & News</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">Features</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">FAQ Question</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">Testimonial</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="h5">Membership</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">Account</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">Membership</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">Subscribe</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">Tags</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link hover:underline">Authors</a>
+            </li>
+
+          </ul>
+
+        </div>
+      -->
+          <div class="section footer-bottom">
+
+            <p class="copyright">
+              &copy; Copyright 2024 by <a href="#"
+                class="copyright-link hover:underline">Koyama</a>
+            </p>
+
+          </div>
+
+        </div>
+      </footer>
+
+
+    <!-- Custom JS -->
+    <script>
+        // Swiper initialization
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+
+        // Toggle mobile menu
+        const menuBars = document.getElementById('menu-bars');
+        const navbar = document.querySelector('.navbar');
+        menuBars.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
