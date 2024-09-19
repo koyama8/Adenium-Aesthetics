@@ -50,17 +50,17 @@
 
             <li class="navbar-item">
               <a href="#" class="navbar-link hover:underline"
-                data-nav-link>Home</a>
+                data-nav-link>Principal</a>
             </li>
 
             <li class="navbar-item">
               <a href="#recent-post" class="navbar-link hover:underline"
-                data-nav-link>Recent Post</a>
+                data-nav-link>Postagem recente</a>
             </li>
 
             <li class="navbar-item">
               <a href="#recommended" class="navbar-link hover:underline"
-                data-nav-link>Recommended</a>
+                data-nav-link>Recomendado</a>
             </li>
 
           </ul>
@@ -71,7 +71,7 @@
           <button class="search-btn" aria-label="search" data-search-toggler>
             <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
 
-            <span class="span">Search</span>
+            <span class="span">Pesquisar</span>
           </button>
 
           <button class="nav-toggle-btn" aria-label="toggle menu"
@@ -81,7 +81,7 @@
             <span class="span three"></span>
           </button>
 
-          <a href="#" class="btn">Join</a>
+          <a href="#" class="btn" id="subscribeBtn">Inscreva-se</a>
 
         </div>
 
@@ -105,7 +105,8 @@
 
       </div>
 
-      <p class="search-bar-text">Please enter at least 3 characters</p>
+      <p class="search-bar-text">Digite o que deseja pesquisar em nosso
+        blog.</p>
 
     </div>
 
@@ -516,7 +517,7 @@
 
                 </ul>
 
-                <span class="span">Meet our top authors</span>
+                <span class="span">Tópicos do autor</span>
               </div>
 
             </div>
@@ -533,7 +534,6 @@
                       alt="Creating is a privilege but it’s also a gift"
                       class="img-cover">
 
-                  
                   </figure>
 
                   <div class="card-content">
@@ -577,7 +577,6 @@
                       alt="Being unique is better than being perfect"
                       class="img-cover">
 
-                   
                   </figure>
 
                   <div class="card-content">
@@ -624,7 +623,6 @@
                       height="660" loading="lazy"
                       alt="Now we’re getting somewhere" class="img-cover">
 
-                    
                   </figure>
 
                   <div class="card-content">
@@ -671,7 +669,6 @@
                         alt="The trick to getting more done is to have the freedom to roam around"
                         class="img-cover">
 
-                     
                     </figure>
 
                     <div class="card-content">
@@ -716,7 +713,6 @@
                         alt="Every day, in every city and town across the country"
                         class="img-cover">
 
-                     
                     </figure>
 
                     <div class="card-content">
@@ -764,7 +760,6 @@
                         alt="Your voice, your mind, your story, your vision"
                         class="img-cover">
 
-                      
                     </figure>
 
                     <div class="card-content">
@@ -829,21 +824,20 @@
 
                     <figure class="card-banner img-holder"
                       style="--width: 300; --height: 360;">
-                      <img src="./assets/images/adenium.jpg" width="300"
+                      <img src="./assets/images/desert_rose_substrate.jpg"
+                        width="300"
                         height="360" loading="lazy"
                         alt="The trick to getting more done is to have the freedom to roam around "
                         class="img-cover">
 
-                     
                     </figure>
 
                     <div class="card-content">
 
                       <h3 class="h5">
                         <a href="#" class="card-title hover:underline">
-                          The trick to getting more done is to have the freedom
-                          to
-                          roam around
+                          O guia definitivo para o substrato ideal das Rosas do
+                          Deserto.
                         </a>
                       </h3>
 
@@ -857,20 +851,19 @@
 
                     <figure class="card-banner img-holder"
                       style="--width: 300; --height: 360;">
-                      <img src="./assets/images/recommended-2.jpg" width="300"
+                      <img src="./assets/images/espécies.png" width="300"
                         height="360" loading="lazy"
                         alt="Every day, in every city and town across the country "
                         class="img-cover">
 
-                      
                     </figure>
 
                     <div class="card-content">
 
                       <h3 class="h5">
                         <a href="#" class="card-title hover:underline">
-                          Every day, in every city and town across the country
-                        </a>
+                          Conheça as magníficas espécies de Adenium e as
+                          fascinantes plantas de Socotra. </a>
                       </h3>
 
                     </div>
@@ -888,7 +881,6 @@
                         alt="I work best when my space is filled with inspiration "
                         class="img-cover">
 
-                      
                     </figure>
 
                     <div class="card-content">
@@ -914,7 +906,6 @@
                         alt="I have my own definition of minimalism "
                         class="img-cover">
 
-                     
                     </figure>
 
                     <div class="card-content">
@@ -940,7 +931,6 @@
                         alt="Change your look and your attitude "
                         class="img-cover">
 
-                      
                     </figure>
 
                     <div class="card-content">
@@ -965,7 +955,6 @@
                         height="360" loading="lazy"
                         alt="The difference is quality " class="img-cover">
 
-                     
                     </figure>
 
                     <div class="card-content">
@@ -1178,6 +1167,16 @@
           src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule
           src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <script>
+          document.getElementById("subscribeBtn").addEventListener("click", function(event) {
+          event.preventDefault(); // Previne o comportamento padrão do link
+
+           alert("Inscrição realizada com sucesso!");
+});
+
+
+        </script>
 
       </body>
 
