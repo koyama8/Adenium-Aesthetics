@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adenium Aesthetics</title>
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet"
+            href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <!-- Custom CSS -->
+
+        <link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="../assets/css/style.css">
+
+        <style>
+        /* Body and General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            color: #2e8b57;
+            text-align: center;
+        }
+
+        h3{
+            font-size: 15px;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        section {
+            background: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }      
+
+        /* Blog Content Styles */
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+        }
+
+        .blog-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .blog-content {
+            text-align: left;
+        }
+
+        .blog-content h2 {
+            color: #2e8b57;
+            font-size: 1.5rem;
+        }
+
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .navbar {
+                display: none;
+            }
+
+            .navbar.active {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .swiper-container {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    </head>
+    <body>
+
+        <!-- 
+    - #HEADER
+  -->
+
+        <header class="header section" data-header
+            style="position: fixed; top: 0; width: 100%; z-index: 1000; margin-left: 250px; margin-top: -20px;">
+            <div class="container">
+
+                <nav class="navbar" data-navbar>
+                    <ul class="navbar-list">
+
+                        <li class="navbar-item">
+                            <a href="../index.html"
+                                class="navbar-link hover:underline"
+                                data-nav-link>Principal</a>
+                        </li>
+
+                        <li class="navbar-item">
+                            <a href="#recent-post"
+                                class="navbar-link hover:underline"
+                                data-nav-link>Postagem recente</a>
+                        </li>
+
+                        <li class="navbar-item">
+                            <a href="#recommended"
+                                class="navbar-link hover:underline"
+                                data-nav-link>Recomendado</a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <div class="wrapper">
+
+                    <button class="search-btn" aria-label="search"
+                        data-search-toggler>
+                        <ion-icon name="search-outline"
+                            aria-hidden="true"></ion-icon>
+
+                        <span class="span">Pesquisar</span>
+                    </button>
+
+                    <button class="nav-toggle-btn" aria-label="toggle menu"
+                        data-nav-toggler>
+                        <span class="span one"></span>
+                        <span class="span two"></span>
+                        <span class="span three"></span>
+                    </button>
+
+                    <a href="#" class="btn" id="subscribeBtn">Inscreva-se</a>
+
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Swiper Slider -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img
+                        src="../assets/images/bonsai_1.jpeg"
+                        alt="Adenium 1"></div>
+                <div class="swiper-slide"><img
+                        src="../assets/images/bonsai_2.jpeg"
+                        alt="Adenium 2"></div>
+                <div class="swiper-slide"><img
+                        src="../assets/images/bonsai_5.jpeg"
+                        alt="Adenium 3"></div>
+                <div class="swiper-slide"><img
+                        src="../assets/images/bonsai_4.jpeg"
+                        alt="Adenium 4"></div>
+            </div>
+            <!-- Pagination and navigation buttons -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- Blog Content -->
+        <div class="container">
+            <section class="blog-header">
+                <h1>Bem-vindo ao Bonsai Mastery</h1>
+                <p>O Bonsai é uma arte milenar que reflete a paciência, a
+                    dedicação e a
+                    conexão entre o homem e a natureza. No Bonsai Mastery,
+                    exploramos a beleza
+                    dessas miniaturas vivas, cultivadas e moldadas ao longo de
+                    anos para
+                    capturar a essência da natureza em um vaso. Através de
+                    técnicas cuidadosas,
+                    como poda e aramação, o Bonsai se transforma em uma obra de
+                    arte viva.</p>
+            </section>
+
+            <section class="blog-content">
+                <h2>Sobre o Bonsai</h2>
+                <p>O <strong>Bonsai</strong> é uma prática de cultivo e
+                    treinamento de
+                    árvores em miniatura, originada na China e popularizada no
+                    Japão. Através
+                    de técnicas de poda e aramação, é possível controlar o
+                    crescimento da
+                    árvore e criar formas únicas, imitando uma árvore madura da
+                    natureza em
+                    um tamanho reduzido. O Bonsai pode viver por muitas décadas,
+                    sendo passado
+                    de geração em geração.</p>
+
+                <h2>Características</h2>
+                <p><strong>Tamanho:</strong> Embora existam bonsais de diversos
+                    tamanhos,
+                    desde alguns centímetros até 1 metro de altura, o ideal é
+                    que a planta
+                    mantenha as proporções de uma árvore real, mas em miniatura.
+                    Cada Bonsai
+                    é uma representação fiel da natureza.</p>
+                <p><strong>Habitat:</strong> O Bonsai requer um ambiente com boa
+                    iluminação,
+                    ventilação adequada e umidade controlada. Dependendo da
+                    espécie, ele pode
+                    ser cultivado tanto em ambientes internos quanto externos,
+                    mas sempre
+                    precisará de cuidados específicos para se adaptar ao
+                    ambiente.</p>
+                <p><strong>Dieta:</strong> O Bonsai precisa de regas regulares,
+                    mas controladas.
+                    O excesso de água pode levar ao apodrecimento das raízes,
+                    por isso é
+                    importante garantir que o solo esteja bem drenado.</p>
+
+                <h2>Cuidados Especiais</h2>
+                <h3>1. Exposição ao Sol</h3>
+                <p>A maioria dos bonsais precisa de pelo menos 4 a 6 horas de
+                    luz solar direta
+                    por dia, dependendo da espécie. Espécies tropicais podem
+                    preferir luz
+                    indireta mais suave, enquanto coníferas se beneficiam de luz
+                    solar plena.</p>
+
+                <h3>2. Rega e Substrato</h3>
+                <p>O substrato utilizado no cultivo do Bonsai deve ser altamente
+                    drenante,
+                    composto por materiais como akadama, pedrisco e matéria
+                    orgânica. Regue o
+                    Bonsai conforme a necessidade, verificando se o solo está
+                    seco antes de
+                    realizar uma nova rega, especialmente durante os meses mais
+                    quentes.</p>
+
+                <h3>3. Fertilização</h3>
+                <p>O Bonsai responde bem à fertilização equilibrada,
+                    especialmente durante o
+                    período de crescimento na primavera e verão. Fertilizantes
+                    ricos em
+                    nitrogênio promovem o crescimento das folhas, enquanto
+                    aqueles ricos em
+                    fósforo e potássio ajudam na floração e no fortalecimento
+                    das raízes.</p>
+
+                <h3>4. Poda e Aramação</h3>
+                <p>A poda regular é essencial para moldar a forma do Bonsai e
+                    controlar seu
+                    crescimento. A aramação, por sua vez, permite direcionar os
+                    galhos e o
+                    tronco da árvore conforme o estilo desejado. Essas técnicas
+                    exigem
+                    paciência e habilidade, já que o arame deve ser aplicado com
+                    cuidado para
+                    não ferir a planta.</p>
+
+                <h3>5. Importância no Paisagismo</h3>
+                <p>Embora pequenos, os Bonsais têm uma presença impressionante e
+                    podem ser a
+                    peça central de jardins internos ou externos. Eles são
+                    frequentemente usados
+                    como elementos decorativos em casas, escritórios e até
+                    jardins zen,
+                    transmitindo uma sensação de calma e equilíbrio.</p>
+
+                <h2>Outros Cuidados</h2>
+                <p>Embora o Bonsai seja uma planta durável, é importante
+                    proteger suas raízes
+                    de condições adversas, como excesso de umidade ou frio
+                    extremo. Além disso,
+                    fique atento a pragas comuns, como pulgões e cochonilhas,
+                    que podem
+                    prejudicar o crescimento da planta.</p>
+            </section>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+        <footer class="footer"
+            style="width: 120%; background-color: #47885e; text-align: center; padding: 20px 0; position: relative; bottom: 0;">
+            <div class="container">
+
+                <div class="section footer-bottom">
+
+                    <p class="copyright"
+                        style="color: rgba(255, 255, 255, 0.5); font-size: 16px; margin: 0;">
+                        &copy; 2024 by <a href="#" class="copyright-link"
+                            style="color: rgba(255, 255, 255, 0.5); text-decoration: none;
+            margin-right:350px;">Koyama</a>
+                    </p>
+
+                </div>
+
+            </div>
+        </footer>
+
+        <!-- Custom JS -->
+        <script>
+        // Swiper initialization
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+
+        // Toggle mobile menu
+        const menuBars = document.getElementById('menu-bars');
+        const navbar = document.querySelector('.navbar');
+        menuBars.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+    </body>
+</html>
