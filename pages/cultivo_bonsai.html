@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adenium Aesthetics</title>
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet"
+            href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <!-- Custom CSS -->
+
+        <link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="../assets/css/style.css">
+
+        <style>
+        /* Body and General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            color: #2e8b57;
+            text-align: center;
+        }
+
+        h3{
+            font-size: 15px;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        section {
+            background: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }      
+
+        /* Blog Content Styles */
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+        }
+
+        .blog-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .blog-content {
+            text-align: left;
+        }
+
+        .blog-content h2 {
+            color: #2e8b57;
+            font-size: 1.5rem;
+        }
+
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .navbar {
+                display: none;
+            }
+
+            .navbar.active {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .swiper-container {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    </head>
+    <body>
+
+        <!-- 
+    - #HEADER
+  -->
+        <header class="header section" data-header
+            style="position: fixed; top: 0; width: 100%; z-index: 1000; margin-left: 400px; margin-bottom: 150px;">
+            <div class="container">
+
+                <nav class="navbar" data-navbar>
+                    <ul class="navbar-list">
+
+                        <li class="navbar-item">
+                            <a href="../index.html"
+                                class="navbar-link hover:underline"
+                                data-nav-link>Principal</a>
+                        </li>
+
+                        <li class="navbar-item">
+                            <a href="#recent-post"
+                                class="navbar-link hover:underline"
+                                data-nav-link>Postagem recente</a>
+                        </li>
+
+                        <li class="navbar-item">
+                            <a href="#recommended"
+                                class="navbar-link hover:underline"
+                                data-nav-link>Recomendado</a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <div class="wrapper">
+
+                    <button class="search-btn" aria-label="search"
+                        data-search-toggler>
+                        <ion-icon name="search-outline"
+                            aria-hidden="true"></ion-icon>
+
+                        <span class="span">Pesquisar</span>
+                    </button>
+
+                    <button class="nav-toggle-btn" aria-label="toggle menu"
+                        data-nav-toggler>
+                        <span class="span one"></span>
+                        <span class="span two"></span>
+                        <span class="span three"></span>
+                    </button>
+
+                    <a href="#" class="btn" id="subscribeBtn">Inscreva-se</a>
+
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Swiper Slider -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="imagens/anaconda.png"
+                        alt="Adenium 1"></div>
+                <div class="swiper-slide"><img src="imagens/anaconda_2.png"
+                        alt="Adenium 2"></div>
+                <div class="swiper-slide"><img src="imagens/anaconda_3.png"
+                        alt="Adenium 3"></div>
+                <div class="swiper-slide"><img src="imagens/anaconda_4.png"
+                        alt="Adenium 4"></div>
+            </div>
+            <!-- Pagination and navigation buttons -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <div class="container">
+            <section class="blog-header">
+                <h1>Guia Definitivo de Cultivo de Bonsai</h1>
+            </section>
+
+            <section class="blog-content">
+                <h2>1. Escolha da Espécie</h2>
+                <p><strong>Ficus:</strong> Resistente e ideal para iniciantes, o
+                    Ficus pode ser cultivado em ambientes internos. Sua folhagem
+                    densa e robusta o torna uma ótima opção para quem está
+                    começando. É importante evitar mudanças bruscas de
+                    temperatura.</p>
+                <p><strong>Junípero (Juniperus):</strong> Ótimo para exteriores,
+                    precisa de sol pleno e solo bem drenado. Este bonsai é
+                    famoso por suas folhas em forma de agulha e sua resistência
+                    a climas variados, mas requer umidade adequada.</p>
+                <p><strong>Pinho (Pinus):</strong> Popular entre bonsaistas,
+                    exige paciência, pois seu crescimento é lento. Os pinhos são
+                    muito valorizados por sua beleza e a textura de suas cascas.
+                    A poda é crucial para manter sua forma e promover a
+                    ramificação.</p>
+                <p><strong>Árvore da Seda (Albizia):</strong> Boa para climas
+                    quentes, é conhecida por suas flores exuberantes. Essa
+                    espécie se adapta bem ao cultivo em potes, mas é sensível a
+                    geadas e deve ser protegida em climas frios.</p>
+
+                <h2>2. Localização</h2>
+                <p><strong>Sol:</strong> A maioria das espécies precisa de pelo
+                    menos 5 horas de luz solar direta por dia. Se o cultivo for
+                    interno, considere o uso de luzes de crescimento para suprir
+                    a falta de luz natural.</p>
+                <p><strong>Temperatura:</strong> Mantenha entre 15°C e 30°C.
+                    Algumas espécies, como os pinheiros, podem tolerar
+                    temperaturas mais baixas, mas é importante evitar geadas
+                    severas, especialmente em espécies tropicais.</p>
+
+                <h2>3. Rega</h2>
+                <p><strong>Frequência:</strong> Regue quando o solo estiver seco
+                    a uma profundidade de 1-2 cm. A frequência pode variar de 1
+                    a 7 dias, dependendo do clima e da espécie. Em climas mais
+                    quentes e secos, a rega pode ser necessária com mais
+                    frequência.</p>
+                <p><strong>Método:</strong> Use um regador com bico fino para
+                    não perturbar o solo. Evite encharcar, pois isso pode causar
+                    apodrecimento das raízes. É essencial que o vaso tenha furos
+                    de drenagem adequados.</p>
+
+                <h2>4. Umidade</h2>
+                <p><strong>Nível Ideal:</strong> Bonsais apreciam um ambiente
+                    úmido. Coloque um prato com pedras e água embaixo do vaso,
+                    sem tocar o fundo, para aumentar a umidade. Em ambientes
+                    internos, considere um umidificador para manter a umidade do
+                    ar.</p>
+
+                <h2>5. Adubação</h2>
+                <p><strong>Frequência:</strong> Adube a cada 4-6 semanas durante
+                    a primavera e o verão. No outono e inverno, reduza a
+                    adubação, pois as plantas entram em um período de
+                    dormência.</p>
+                <p><strong>Tipos de Adubo:</strong></p>
+                <ul>
+                    <li><strong>Adubo Líquido:</strong> Um fertilizante
+                        equilibrado, como 20-20-20, é bom para a maioria das
+                        espécies. Dilua o adubo em água antes de aplicar.</li>
+                    <li><strong>Adubo Granulado:</strong> Ideal para um
+                        fornecimento mais lento de nutrientes, sendo benéfico
+                        para plantas que preferem um crescimento gradual.</li>
+                </ul>
+
+                <h2>6. Poda e Modelagem</h2>
+                <p><strong>Poda de Folhas:</strong> Retire folhas excessivas
+                    para permitir a luz e o ar. Faça isso no final da primavera,
+                    ajudando a planta a se recuperar e a se fortalecer.</p>
+                <p><strong>Poda de Raízes:</strong> Deve ser feita a cada 2-3
+                    anos na primavera, reduzindo as raízes principais e mantendo
+                    o sistema radicular equilibrado. O transplante é um bom
+                    momento para fazer essa poda.</p>
+                <p><strong>Modelagem com Arame:</strong> Use arame de alumínio
+                    para modelar os galhos. Coloque o arame em espiral, tendo
+                    cuidado para não machucar a casca. Verifique regularmente e
+                    remova o arame quando não for mais necessário.</p>
+
+                <h2>7. Transplante</h2>
+                <p><strong>Frequência:</strong> Transplante a cada 2-3 anos. Os
+                    jovens podem precisar de transplante anualmente. Isso é
+                    importante para fornecer solo fresco e espaço para o
+                    crescimento das raízes.</p>
+                <p><strong>Quando:</strong> Prefira o início da primavera, antes
+                    do novo crescimento, para minimizar o estresse da planta. Ao
+                    transplantar, use solo específico para bonsai, que oferece
+                    boa drenagem e nutrientes.</p>
+
+                <h2>8. Pragas e Doenças</h2>
+                <p><strong>Monitoramento:</strong> Verifique regularmente a
+                    presença de pulgões, cochonilhas e ácaros. A inspeção
+                    frequente ajuda a detectar problemas antes que eles se
+                    tornem graves.</p>
+                <p><strong>Tratamento:</strong> Use inseticidas orgânicos ou
+                    soluções caseiras (como água e sabão) para controlar
+                    infestações. Além disso, mantenha a planta limpa, lavando as
+                    folhas ocasionalmente para remover sujeira e pragas.</p>
+
+                <h2>9. Considerações Finais</h2>
+                <p>Cada espécie pode ter necessidades específicas, por isso é
+                    essencial pesquisar sobre a variedade escolhida. Informações
+                    sobre clima, solo e cuidados são cruciais para o sucesso no
+                    cultivo de bonsai.</p>
+                <p>Participar de grupos ou fóruns online pode ajudar a obter
+                    dicas e suporte de outros cultivadores. Além disso,
+                    considere visitar exposições de bonsai para inspiração e
+                    aprendizado prático.</p>
+
+                <footer>
+                    <h3>Fontes de Referência</h3>
+                    <ul>
+                        <li>American Bonsai Society</li>
+                        <li>National Bonsai Foundation</li>
+                        <li>Bonsai Empire</li>
+                        <li>“The Complete Book of Bonsai” por Harry
+                            Tomlinson</li>
+                        <li>“Bonsai: The Art of Growing and Keeping Miniature
+                            Trees” por Peter Chan</li>
+                    </ul>
+                </footer>
+            </section>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+        <footer class="footer"
+            style="width: 120%; background-color: #47885e; text-align: center; padding: 20px 0; position: relative; bottom: 0;">
+            <div class="container">
+
+                <div class="section footer-bottom">
+
+                    <p class="copyright"
+                        style="color: rgba(255, 255, 255, 0.5); font-size: 16px; margin: 0;">
+                        &copy; 2024 by <a href="#" class="copyright-link"
+                            style="color: rgba(255, 255, 255, 0.5); text-decoration: none;
+            margin-right:350px;">Koyama</a>
+                    </p>
+
+                </div>
+
+            </div>
+        </footer>
+
+        <!-- Custom JS -->
+        <script>
+        // Swiper initialization
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+
+        // Toggle mobile menu
+        const menuBars = document.getElementById('menu-bars');
+        const navbar = document.querySelector('.navbar');
+        menuBars.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+    </body>
+</html>
