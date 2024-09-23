@@ -44,6 +44,5 @@ Expanda sua coleção com as melhores técnicas de propagação:
 > A aplicação correta das técnicas discutidas neste blog ajudará você a manter uma coleção vibrante e saudável de Rosa do Deserto e Bonsais Exóticos.
 
 ---
+🌐 **Quer ver o site?** Acesse: [Adenium Aesthetics](https://koyama8.github.io/Adenium-Aesthetics/)
 
-**Contribuições são bem-vindas!**  
-Sinta-se à vontade para abrir uma [issue](https://github.com/usuario/projeto/issues) ou enviar um [pull request](https://github.com/usuario/projeto/pulls).
