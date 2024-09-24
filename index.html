@@ -15,6 +15,9 @@
     <meta name="description"
       content="Adenium-Aesthetics">
 
+    <!-- box icones-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+      rel='stylesheet'>
     <!-- 
     - favicon
   -->
@@ -49,7 +52,7 @@
           <ul class="navbar-list">
 
             <li class="navbar-item">
-              <a href="#" class="navbar-link hover:underline"
+              <a id="principal" href="#" class="navbar-link hover:underline"
                 data-nav-link>Principal</a>
             </li>
 
@@ -95,7 +98,7 @@
     <div class="search-bar" data-search-bar>
 
       <div class="input-wrapper">
-        <input type="search" name="search" placeholder="Search"
+        <input type="search" name="pesquisar" placeholder="Pesquisar"
           class="input-field">
 
         <button class="search-close-btn" aria-label="close search bar"
@@ -808,7 +811,7 @@
 
               </ul>
 
-              <button class="btn" type="button">Load more</button>
+              <button class="btn" type="button">Carregar mais</button>
 
             </div>
           </section>
@@ -822,7 +825,7 @@
             <div class="container">
 
               <p class="section-subtitle">
-                <strong class="strong">Recommended</strong>
+                <strong class="strong">Recomendado</strong>
               </p>
 
               <ul class="grid-list">
@@ -832,7 +835,7 @@
 
                     <figure class="card-banner img-holder"
                       style="--width: 300; --height: 360;">
-                      <img src="./assets/images/desert_rose_substrate.jpg"
+                      <img src="./assets/images/substrato.png"
                         width="300"
                         height="360" loading="lazy"
                         alt="The trick to getting more done is to have the freedom to roam around "
@@ -895,8 +898,9 @@
                     <div class="card-content">
 
                       <h3 class="h5">
-                        <a href="pages/cultivo_bonsai.html" class="card-title hover:underline">
-                          Guia Definitivo para o cultivo de Bonsai.                        </a>
+                        <a href="pages/cultivo_bonsai.html"
+                          class="card-title hover:underline">
+                          Guia Definitivo para o cultivo de Bonsai. </a>
                       </h3>
 
                     </div>
@@ -911,7 +915,9 @@
                       style="--width: 300; --height: 360;">
                       <img src="./assets/images/recommended-4.jpg" width="300"
                         height="360" loading="lazy"
-                        alt="I have my own definition of minimalism "
+                        alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+
+                        "
                         class="img-cover">
 
                     </figure>
@@ -920,7 +926,9 @@
 
                       <h3 class="h5">
                         <a href="#" class="card-title hover:underline">
-                          I have my own definition of minimalism
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit.
+
                         </a>
                       </h3>
 
@@ -936,7 +944,7 @@
                       style="--width: 300; --height: 360;">
                       <img src="./assets/images/recommended-5.jpg" width="300"
                         height="360" loading="lazy"
-                        alt="Change your look and your attitude "
+                        alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
                         class="img-cover">
 
                     </figure>
@@ -945,7 +953,8 @@
 
                       <h3 class="h5">
                         <a href="#" class="card-title hover:underline">
-                          Change your look and your attitude
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit.
                         </a>
                       </h3>
 
@@ -961,7 +970,8 @@
                       style="--width: 300; --height: 360;">
                       <img src="./assets/images/logo" width="300"
                         height="360" loading="lazy"
-                        alt="The difference is quality " class="img-cover">
+                        alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                        class="img-cover">
 
                     </figure>
 
@@ -969,7 +979,8 @@
 
                       <h3 class="h5">
                         <a href="#" class="card-title hover:underline">
-                          The difference is quality
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit.
                         </a>
                       </h3>
 
@@ -1008,155 +1019,15 @@
     - #FOOTER
   -->
 
+        <!-- footer  -->
         <footer class="footer">
-          <div class="container">
-
-            <!--
-          <div class="footer-top section">
-
-            <div class="footer-brand">
-
-              <a href="#" class="logo">
-                <img src="./assets/images/logo.svg" width="129" height="40"
-                  alt>
-              </a>
-
-              <p class="footer-text">
-                A minimal, functional theme for running a paid-membership
-                publication on Ghost.
-              </p>
-
-            </div>
-
-            <ul class="footer-list">
-
-              <li>
-                <p class="h5">Social</p>
-              </li>
-
-              <li class="footer-list-item">
-                <ion-icon name="logo-facebook"></ion-icon>
-
-                <a href="#" class="footer-link hover:underline">Facebook</a>
-              </li>
-
-              <li class="footer-list-item">
-                <ion-icon name="logo-twitter"></ion-icon>
-
-                <a href="#" class="footer-link hover:underline">Twitter</a>
-              </li>
-
-              <li class="footer-list-item">
-                <ion-icon name="logo-pinterest"></ion-icon>
-
-                <a href="#" class="footer-link hover:underline">Pinterest</a>
-              </li>
-
-              <li class="footer-list-item">
-                <ion-icon name="logo-vimeo"></ion-icon>
-
-                <a href="#" class="footer-link hover:underline">Vimeo</a>
-              </li>
-
-            </ul>
-
-            <ul class="footer-list">
-
-              <li>
-                <p class="h5">About</p>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link hover:underline">Style Guide</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link hover:underline">Features</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link hover:underline">Contact</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link hover:underline">404</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link hover:underline">Privacy
-                  Policy</a>
-              </li>
-
-            </ul>
-
-            <ul class="footer-list">
-
-              <li>
-                <p class="h5">Features</p>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link hover:underline">Upcoming
-                  Events</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link hover:underline">Blog & News</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link hover:underline">Features</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link hover:underline">FAQ Question</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link hover:underline">Testimonial</a>
-              </li>
-
-            </ul>
-
-            <ul class="footer-list">
-
-              <li>
-                <p class="h5">Membership</p>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link hover:underline">Account</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link hover:underline">Membership</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link hover:underline">Subscribe</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link hover:underline">Tags</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link hover:underline">Authors</a>
-              </li>
-
-            </ul>
-
+          <div class="footer-text">
+            <p>Copyright &copy; 2024 by Koyama | All Rights Reserved.</p>
           </div>
-        -->
-            <div class="section footer-bottom">
 
-              <p class="copyright">
-                &copy; Copyright 2024 by <a href="#"
-                  class="copyright-link hover:underline">Koyama</a>
-              </p>
-
-            </div>
-
+          <div class="footer-iconTop">
+            <a href="#principal">voltar para o topo <i
+                class='bx bx-chevron-up'></i> </a>
           </div>
         </footer>
 
