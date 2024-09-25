@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adenium Aesthetics</title>
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet"
+            href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <!-- Custom CSS -->
+
+        <link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="../assets/css/style.css">
+
+        <style>
+        /* Body and General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            color: #2e8b57;
+            text-align: center;
+        }
+
+        h3{
+            font-size: 15px;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        section {
+            background: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }      
+
+        /* Blog Content Styles */
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+        }
+
+        .blog-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .blog-content {
+            text-align: left;
+        }
+
+        .blog-content h2 {
+            color: #2e8b57;
+            font-size: 1.5rem;
+        }
+
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .navbar {
+                display: none;
+            }
+
+            .navbar.active {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .swiper-container {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    </head>
+    <body>
+
+        <!-- 
+    - #HEADER
+  -->
+        <header class="header section" data-header
+            style="position: fixed; top: 0; width: 100%; z-index: 1000; margin-left: 250px; margin-top: -20px;">
+            <div class="container">
+
+                <nav class="navbar" data-navbar>
+                    <ul class="navbar-list">
+
+                        <li class="navbar-item">
+                            <a href="../index.html"
+                                class="navbar-link hover:underline"
+                                data-nav-link>Principal</a>
+                        </li>
+
+                        <li class="navbar-item">
+                            <a href="#recent-post"
+                                class="navbar-link hover:underline"
+                                data-nav-link>Postagem recente</a>
+                        </li>
+
+                        <li class="navbar-item">
+                            <a href="#recommended"
+                                class="navbar-link hover:underline"
+                                data-nav-link>Recomendado</a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <div class="wrapper">
+
+                    <button class="search-btn" aria-label="search"
+                        data-search-toggler>
+                        <ion-icon name="search-outline"
+                            aria-hidden="true"></ion-icon>
+
+                        <span class="span">Pesquisar</span>
+                    </button>
+
+                    <button class="nav-toggle-btn" aria-label="toggle menu"
+                        data-nav-toggler>
+                        <span class="span one"></span>
+                        <span class="span two"></span>
+                        <span class="span three"></span>
+                    </button>
+
+                    <a href="#" class="btn" id="subscribeBtn">Inscreva-se</a>
+
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Swiper Slider -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img
+                        src="../assets/images/guia_poda.png"
+                        alt="Adenium 1"></div>
+                <div class="swiper-slide"><img src="../assets/images/poda_3.png"
+                        alt="Adenium 2"></div>
+                <div class="swiper-slide"><img src="../assets/images/poda_4.png"
+                        alt="Adenium 3"></div>
+                <div class="swiper-slide"><img src="../assets/images/poda_1.png"
+                        alt="Adenium 4"></div>
+            </div>
+            <!-- Pagination and navigation buttons -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <div class="container">
+            <section class="blog-header">
+                <h1>Guia de Poda e Iluminação para Rosa do Deserto</h1>
+            </section>
+
+            <section class="blog-content">
+                <h2>1. Poda da Rosa do Deserto</h2>
+                <p><strong>Importância da Poda:</strong> A poda da rosa do
+                    deserto é essencial para manter a planta saudável e promover
+                    um crescimento equilibrado. Ao podar, você estimula novas
+                    brotações e pode moldar a planta conforme seu gosto
+                    pessoal.</p>
+                <p><strong>Quando Podar:</strong> O momento ideal para realizar
+                    a poda é no início da primavera, quando a planta começa a
+                    sair do estado de dormência. Evite podar durante o inverno
+                    ou em períodos de dormência ativa, pois a planta estará
+                    menos ativa e a recuperação será mais lenta.</p>
+                <p><strong>Como Podar:</strong> Utilize uma tesoura de poda
+                    esterilizada para evitar infecções. Corte os galhos que
+                    estão crescendo de forma desordenada, bem como os galhos
+                    mortos ou doentes. Sempre faça cortes diagonais e limpos,
+                    permitindo uma cicatrização adequada da planta.</p>
+                <p><strong>Poda para Florescimento:</strong> A poda também pode
+                    ser usada para incentivar a floração da rosa do deserto. Ao
+                    remover galhos velhos, você estimula o surgimento de novas
+                    flores. Faça isso logo após o florescimento, permitindo que
+                    a planta canalize sua energia para novas flores.</p>
+
+                <h2>2. Iluminação Ideal para Rosa do Deserto</h2>
+                <p><strong>Exigências de Luz:</strong> A rosa do deserto é uma
+                    planta que adora sol pleno. Para um crescimento ideal e uma
+                    floração abundante, ela precisa de pelo menos 5 a 6 horas de
+                    luz solar direta diariamente.</p>
+                <p><strong>Localização:</strong> Se cultivada em ambientes
+                    externos, coloque-a em um local com bastante luz solar
+                    direta. Já em ambientes internos, posicione a planta próxima
+                    a uma janela com boa incidência de luz. Se houver falta de
+                    luz natural, considere o uso de lâmpadas de crescimento.</p>
+                <p><strong>Proteção contra Excesso de Sol:</strong> Embora a
+                    rosa do deserto tolere bem o sol forte, em regiões muito
+                    quentes, pode ser interessante proteger a planta durante as
+                    horas mais intensas do dia, evitando queimaduras nas
+                    folhas.</p>
+
+                <h2>3. Considerações Finais</h2>
+                <p>A rosa do deserto, com a poda correta e a iluminação
+                    adequada, pode oferecer uma floração exuberante e um
+                    crescimento saudável. Lembre-se de monitorar a planta de
+                    perto para ajustar os cuidados conforme as necessidades
+                    específicas de sua região e clima.</p>
+            </section>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+        <footer class="footer"
+            style="width: 120%; background-color: #47885e; text-align: center; padding: 20px 0; position: relative; bottom: 0;">
+            <div class="container">
+
+                <div class="section footer-bottom">
+
+                    <p class="copyright"
+                        style="color: rgba(255, 255, 255, 0.5); font-size: 16px; margin: 0;">
+                        &copy; 2024 by <a href="#" class="copyright-link"
+                            style="color: rgba(255, 255, 255, 0.5); text-decoration: none;
+            margin-right:350px;">Koyama</a>
+                    </p>
+
+                </div>
+
+            </div>
+        </footer>
+
+        <!-- Custom JS -->
+        <script>
+        // Swiper initialization
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+
+        // Toggle mobile menu
+        const menuBars = document.getElementById('menu-bars');
+        const navbar = document.querySelector('.navbar');
+        menuBars.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+    </body>
+</html>
